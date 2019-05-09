@@ -1,0 +1,9 @@
+/Users/joehoang/Documents/DeliverooCronParser/DeliverooCronParser/bin/Debug/DeliverooCronParser.dll
+/Users/joehoang/Documents/DeliverooCronParser/DeliverooCronParser/bin/Debug/DeliverooCronParser.pdb
+/Users/joehoang/Documents/DeliverooCronParser/DeliverooCronParser/bin/Debug/nunit.framework.dll
+/Users/joehoang/Documents/DeliverooCronParser/DeliverooCronParser/bin/Debug/nunit.framework.xml
+/Users/joehoang/Documents/DeliverooCronParser/DeliverooCronParser/obj/Debug/DeliverooCronParser.csprojAssemblyReference.cache
+/Users/joehoang/Documents/DeliverooCronParser/DeliverooCronParser/obj/Debug/DeliverooCronParser.csproj.CoreCompileInputs.cache
+/Users/joehoang/Documents/DeliverooCronParser/DeliverooCronParser/obj/Debug/DeliverooCronParser.csproj.CopyComplete
+/Users/joehoang/Documents/DeliverooCronParser/DeliverooCronParser/obj/Debug/DeliverooCronParser.dll
+/Users/joehoang/Documents/DeliverooCronParser/DeliverooCronParser/obj/Debug/DeliverooCronParser.pdb
