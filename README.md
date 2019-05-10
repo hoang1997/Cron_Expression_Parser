@@ -2,16 +2,16 @@
 Simple C# cron parser that uses standard cron format with five time fields (minute, hour, day of month, month, and day of week) plus a command. The cron string is passed to the application on the command line as a single argument on a single line.  
 
 ## How to Run the program on MacOS/Linux
-  - Firstly navigate to the folder containing the Program.cs file in         
+  - Firstly navigate to the folder containing the cronparser.cs file in         
     terminal
   
   ![Example Image](/example_images/example2.png)
   
-  - Enter "mcs Program.cs" in the terminal to compile the application
+  - Enter "mcs cronparser.cs" in the terminal to compile the application
   
   ![Example Image](/example_images/example3.png)
   
-  - Enter "mono Program.cs <COMMAND LINE ARGUMENTS>" to run the  
+  - Enter "mono cronparser.cs [COMMAND LINE ARGUMENTS]" to run the  
     application
   
   ![Example Image](/example_images/example4.png)
