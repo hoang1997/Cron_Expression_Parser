@@ -1,4 +1,4 @@
-# Cron Parser - Deliveroo Coding Challenge
+# Cron Expression Parser - Deliveroo Coding Challenge
 Simple C# cron parser that uses standard cron format with five time fields (minute, hour, day of month, month, and day of week) plus a command. The cron string is passed to the application on the command line as a single argument on a single line.  
 
 ## How to Run the program on MacOS/Linux
