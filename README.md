@@ -21,3 +21,11 @@ The command line arguments consist of five arguments which are minute, hour, day
 
 ![Example Image](/example_images/example1.png)
 
+## Testing
+Testing was implemented using the NUnit package/framework, the test scenarios were:
+  - Testing "\*" symbolising all values
+  - Testing "\*/<NUMBER>" symboling all values divided by a specified value
+  - Testing ranges (e.g 1-5) symbolising all values between the two numbers
+  - Testing specific values (e.g. 1,2,3) symboling only those values should be produced
+ 
+ 
