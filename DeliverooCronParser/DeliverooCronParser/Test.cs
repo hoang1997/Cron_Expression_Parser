@@ -12,7 +12,7 @@ namespace DeliverooCronParser
             bool success;
 
             Program p = new Program();
-            if(p.PrintMins(args[0]) == true && p.PrintHour(args[1]) == true && p.PrintDOM(args[2]) == true && p.PrintWeek(args[3]) == true && p.PrintMonths(args[4]) == true)
+            if(p.PrintMins(args[0]) == true && p.PrintHour(args[1]) == true && p.PrintDOM(args[2]) == true && p.PrintWeek(args[4]) == true && p.PrintMonths(args[3]) == true)
             {
                 success = true;
             } else { success = false; }
@@ -27,7 +27,23 @@ namespace DeliverooCronParser
             bool success;
 
             Program p = new Program();
-            if (p.PrintMins(args[0]) == true && p.PrintHour(args[1]) == true && p.PrintDOM(args[2]) == true && p.PrintWeek(args[3]) == true && p.PrintMonths(args[4]) == true)
+            if (p.PrintMins(args[0]) == true && p.PrintHour(args[1]) == true && p.PrintDOM(args[2]) == true && p.PrintWeek(args[4]) == true && p.PrintMonths(args[3]) == true)
+            {
+                success = true;
+            }
+            else { success = false; }
+
+            Assert.IsTrue(success);
+        }
+
+        [Test()]
+        public void TestCaseAllDivisible()
+        {
+            string[] args = { "*/5", "5", "1,15", "*/2", "*/2", "/usr/bin/find" };
+            bool success;
+
+            Program p = new Program();
+            if (p.PrintMins(args[0]) == true && p.PrintHour(args[1]) == true && p.PrintDOM(args[2]) == true && p.PrintWeek(args[4]) == true && p.PrintMonths(args[3]) == true)
             {
                 success = true;
             }
@@ -43,7 +59,7 @@ namespace DeliverooCronParser
             bool success;
 
             Program p = new Program();
-            if (p.PrintMins(args[0]) == true && p.PrintHour(args[1]) == true && p.PrintDOM(args[2]) == true && p.PrintWeek(args[3]) == true && p.PrintMonths(args[4]) == true)
+            if (p.PrintMins(args[0]) == true && p.PrintHour(args[1]) == true && p.PrintDOM(args[2]) == true && p.PrintWeek(args[4]) == true && p.PrintMonths(args[3]) == true)
             {
                 success = true;
             }
