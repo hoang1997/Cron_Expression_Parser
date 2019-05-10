@@ -23,7 +23,7 @@ Simple C# cron parser that uses standard cron format with five time fields (minu
 ## Command Line Arguments
 The command line arguments consist of five arguments which are minute, hour, day of month, month, and day of week plus a command; seperated by a space. Below shows an example screenshot of the application running with the command line arguments.  
 
-deliveroocronparser USER$ [MINUTE] [HOUR] <DAY OF MONTH> <MONTH> <DAY OF WEEK> <COMMAND>
+**deliveroocronparser USER$ [MINUTE] [HOUR] [DAY OF MONTH] [MONTH] [DAY OF WEEK] [COMMAND]**
 
 ![Example Image](/example_images/example1.png)
 
