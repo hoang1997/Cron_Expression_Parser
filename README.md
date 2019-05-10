@@ -28,4 +28,5 @@ Testing was implemented using the NUnit package/framework, the test scenarios we
   - Testing ranges (e.g 1-5) symbolising all values between the two numbers
   - Testing specific values (e.g. 1,2,3) symboling only those values should be produced
  
+ The Unit tests can be found in the project under "test.cs"
  
