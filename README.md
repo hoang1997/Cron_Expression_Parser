@@ -17,7 +17,7 @@ Simple C# cron parser that uses standard cron format with five time fields (minu
   ![Example Image](/example_images/example4.png)
   
   ### Quirks on MacOS/Linux
-  - May have to use backslash ("\") when using all ("\*") symbol, as the terminal will think that the user is asking for the 
+  - May have to use backslash ("\\") when using all ("\*") symbol, as the terminal will think that the user is asking for the 
     names of all the files in the current directory
   
 ## Command Line Arguments
