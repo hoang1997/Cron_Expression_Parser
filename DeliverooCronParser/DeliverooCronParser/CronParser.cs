@@ -45,16 +45,25 @@ namespace DeliverooCronParser
         //Print Minutes
         public bool PrintMins(string arg)
         {
-            int mins = Int32.Parse(arg.Substring(2));
+            
+
+
 
             try
             {
                 Console.Write("Minutes\t\t|\t");
+
+                if (arg == "*")
+                {
+                    Console.WriteLine("60");
+                    return true;
+                }
+
                 //check to see if there is a division
-                if (arg.Substring(0, 2) == "*/" && 60 % mins == 0)
+                if (arg.Substring(0, 2) == "*/" && 60 % Int32.Parse(arg.Substring(2)) == 0)
                 {
                     //print value
-                    for (int i = 0; i < 60; i += mins)
+                    for (int i = 0; i < 60; i += Int32.Parse(arg.Substring(2)))
                     {
                         Console.Write(i + " ");
                     }
@@ -63,6 +72,7 @@ namespace DeliverooCronParser
 
                 }
 
+                //Check to see if value is valid
                 if (60 % Int32.Parse(arg) == 0)
                 {
                     for (int i = 0; i < 60; i += Int32.Parse(arg))
@@ -100,6 +110,7 @@ namespace DeliverooCronParser
                     return true;
                 } //check to see if there is a range
 
+                //check to see if there is range 
                 if (arg.IndexOf('-') > -1)
                 {
                     PrintRange(arg);
@@ -257,7 +268,7 @@ namespace DeliverooCronParser
             //create program instance
             Program CronParser = new Program();
 
-            Console.WriteLine("\nCron Parser - Joseph Hoang\n\nInfo\t\t|\tValue\n-----------------------------------");
+            Console.WriteLine("\nCron Expression Parser - Deliveroo Demo - Joseph Hoang\n\nInfo\t\t|\tValue\n-----------------------------------");
             //loop through each command line argument
             //dependent on the index of the argument run certain functions
             bool printedMins, printedHours, printedDOM, printedMonths, printedWeek;

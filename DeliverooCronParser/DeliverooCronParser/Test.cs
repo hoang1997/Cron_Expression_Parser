@@ -23,7 +23,7 @@ namespace DeliverooCronParser
         [Test()]
         public void TestCaseAll()
         {
-            string[] args = { "*/15", "5", "*", "*", "*", "/usr/bin/find" };
+            string[] args = { "*/15", "5", "1,15", "*", "*", "/usr/bin/find" };
             bool success;
 
             Program p = new Program();
