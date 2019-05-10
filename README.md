@@ -16,6 +16,10 @@ Simple C# cron parser that uses standard cron format with five time fields (minu
   
   ![Example Image](/example_images/example4.png)
   
+  ### Quirks on MacOS/Linux
+  - May have to use backslash ("\") when using all ("\*") symbol, as the terminal will think that the user is asking for the 
+    names of all the files in the current directory
+  
 ## Command Line Arguments
 The command line arguments consist of five arguments which are minute, hour, day of month, month, and day of week plus a command; seperated by a space. Below shows an example screenshot of the application running with the command line arguments.  
 
@@ -29,4 +33,6 @@ Testing was implemented using the NUnit package/framework, the test scenarios we
   - Testing specific values (e.g. 1,2,3) symboling only those values should be produced
  
  The Unit tests can be found in the project under "test.cs"
+ 
+ 
  
